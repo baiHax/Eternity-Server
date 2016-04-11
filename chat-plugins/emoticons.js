@@ -9,6 +9,44 @@ var color = require('../config/color');
 exports.parseEmoticons = parseEmoticons;
 
 var emotes = {
+	':(': 'http://factoryjoe.s3.amazonaws.com/emoticons/emoticon-0101-sadsmile.gif',
+	':D': 'http://factoryjoe.s3.amazonaws.com/emoticons/emoticon-0102-bigsmile.gif',
+	':)': 'http://factoryjoe.s3.amazonaws.com/emoticons/emoticon-0100-smile.gif',
+	';(': 'http://factoryjoe.s3.amazonaws.com/emoticons/emoticon-0106-crying.gif',
+	';)': 'http://factoryjoe.s3.amazonaws.com/emoticons/emoticon-0105-wink.gif',
+	':$': 'http://factoryjoe.s3.amazonaws.com/emoticons/emoticon-0111-blush.gif',
+	':prr:': 'http://r32.imgfast.net/users/3215/11/58/02/smiles/4268145079.gif',
+	'xD': 'http://www.animaatjes.nl/smileys/smileys-en-emoticons/xd/animaatjes-xd-09561.gif',
+	':hola:': 'http://k40.kn3.net/9788B4B8D.gif',
+	'O_O':'http://emoticoner.com/files/emoticons/pink-cat/surprised-pink-cat-emoticon.gif?1292538525',
+	':lengua:' :'http://emoticoner.com/files/emoticons/rice_ball/rice-ball-smiley-10.gif?1302020563',
+	':bañar:': 'http://emoticoner.com/files/emoticons/mouse-girl/mouse-girl-emoticon-50.gif?1292795477',
+	':cepilarme:': 'http://emoticoner.com/files/emoticons/mouse-girl/mouse-girl-emoticon-52.gif?1292795478',
+	':buizel:': 'http://orig11.deviantart.net/079c/f/2008/244/6/a/caramel__buizel_by_raidragonair.gif',
+	':bye:': 'http://emoticoner.com/files/emoticons/rice_ball/rice-ball-smiley-05.gif?1302020563',
+	':sayan:': 'http://emoticoner.com/files/emoticons/blacko/blacko-emoticon-17.gif?1292951356',
+	':Jodes:': 'http://emoticoner.com/files/emoticons/yellow_onion_head/yellow-onion-head-emoticon-13.gif?1301920886',
+	'U_U': 'http://emoticoner.com/files/emoticons/pink-cat/worry-pink-cat-emoticon.gif?1292538526',
+	':calor:': 'http://emoticoner.com/files/emoticons/yellow_onion_head/yellow-onion-head-emoticon-26.gif?1301920889',
+	':pikachu:': 'http://cbc.pokecommunity.com/config/emoticons/pikachu.png',
+	':mudkip:': 'http://vignette2.wikia.nocookie.net/epicrapbattlesofhistory/images/4/46/Awesome_Face_Mudkip.png/revision/latest?cb=20140626034323',
+	':sonji:': 'http://emoticoner.com/files/emoticons/raccoon/feel-love-raccoon-emoticon.gif?1302774071',
+	':eevee:': 'http://cbc.pokecommunity.com/config/emoticons/eevee.png',
+	':hola:': 'http://k40.kn3.net/9788B4B8D.gif',
+	':senpai:': 'http://cbc.pokecommunity.com/config/emoticons/senpai.png',
+	':naruto:': 'http://lh4.ggpht.com/_QwvI2Zom950/TAdYX8-5gQI/AAAAAAAAAu0/2ng4u2V9-1Y/s128/naruto.gif',
+	'facepalm': 'http://i.imgur.com/lv3GmpM.png',
+	':uh:': 'http://i.imgur.com/Z5lOwfZ.png',
+	':troll:': 'http://cdn.overclock.net/a/a0/50x50px-ZC-a0e3f9a7_troll-troll-face.png',
+	':dff:': 'http://i.imgur.com/anY1jf8.png',
+	':uhh:': 'http://emoticoner.com/files/emoticons/text_line/text-line-smiley-006.gif?1302022356',
+	':ujj:': 'http://emoticoner.com/files/emoticons/text_line/text-line-smiley-007.gif?1302022356',
+	':raichu:': 'http://cbc.pokecommunity.com/config/emoticons/raichu.png',
+	':ditto:': 'http://cbc.pokecommunity.com/config/emoticons/ditto.png',
+	':moo:': 'http://cbc.pokecommunity.com/config/emoticons/moo.gif',
+	':wynaut:': 'http://cbc.pokecommunity.com/config/emoticons/wynaut.png',
+	':taco:': 'http://cbc.pokecommunity.com/config/emoticons/taco.png',
+	':superman:': 'http://cbc.pokecommunity.com/config/emoticons/superman.png',
 	'#freewolf': 'http://i.imgur.com/ybxWXiG.png',
 	'feelsbd': 'http://i.imgur.com/YyEdmwX.png',
 	'feelsbm': 'http://i.imgur.com/xwfJb2z.png',
@@ -38,7 +76,16 @@ var emotes = {
 	'wtfman': 'http://i.imgur.com/kwR8Re9.png',
 	'xaa': 'http://i.imgur.com/V728AvL.png',
 	'yayface': 'http://i.imgur.com/anY1jf8.png',
-	'yesface': 'http://i.imgur.com/k9YCF6K.png'
+	'yesface': 'http://i.imgur.com/k9YCF6K.png',
+	':pika:': 'http://a.deviantart.net/avatars/s/u/sudomemopinklatias.gif',
+	':absul:': 'http://a.deviantart.net/avatars/o/m/omega-lord.gif',
+	':lol:': 'http://www.unixstickers.com/image/cache/data/stickers/meme/lolguy/xlaughing.sh-180x180.png.pagespeed.ic.bSRqsdZ8tE.png',
+	':latios:': 'http://pldh.net/media/pokemon/shuffle/381.png',
+	':latias:': 'http://www.pokepedia.fr/images/9/97/Sprite_6_l_380.png',
+	':arcoiris:': 'http://img2.wikia.nocookie.net/__cb20130810210335/wreckitralph-fanon/images/d/dc/Rainbow_Meme_emoticon.png',
+	':gengar:': 'http://www.serebii.net/shuffle/pokemon/094.png',
+	':azumaril:': 'http://pldh.net/media/pokemon/shuffle/184.png'
+	
 	
 };
 
@@ -135,7 +182,7 @@ function create_table() {
 		}
 	}
 
-	return "<div class='infobox'><div class = 'broadcast-blue'><center><b><u>Lista de caritas</u></b></center>" + "<div class='infobox-limited'><table cellspacing='0' cellpadding='5' width='100%'>" + "<tbody>" + emotes_group_list.join("") + "</tbody>" + "</table></div></div>";
+	return "<div class='infobox'><div class = 'broadcast-green'><center><b><u>Lista de caritas</u></b></center>" + "<div class='infobox-limited'><table cellspacing='0' cellpadding='5' width='100%'>" + "<tbody>" + emotes_group_list.join("") + "</tbody>" + "</table></div></div>";
 }
 
 var emotes_table = create_table();
