@@ -17,7 +17,7 @@ exports.commands = {
 			'<tr><td>Símbolo</td><td>Compra el acceso al comado /customsymbol que permite elegir un símbolo (excepto staff) para aparecer en lo alto de la lista de usuarios.</td><td>700</td></tr>' +
 			'<tr><td>TC</td><td>Compra una Tarjeta de entrenador básica. Con una Imagen modificable con /tcimage y una frase de entrenador modificable con /tcphrase</td><td>1000</td></tr>' +
 			'<tr><td>Arreglo</td><td>Si ya tienes un avatar personalizado. Puedes cambiarlo por otro diferente.</td><td>500</td></tr>' +
-			'<tr><td>icon</td><td>Compra el derecho a tener un pokemon al lado de tu nick,Contactar con un Admin para obtener este articulo</td><td>4500</td></tr>' +
+			'<tr><td>icon</td><td>Compra el derecho a tener un pokemon al lado de tu nick,Contactar con un Admin para obtener este articulo</td><td>2500</td></tr>' +
 			'</tbody></table><br /> Para comprar un artículo usa el comando /buy (artículo)' +
 			'<br /> Algunos artículos solo se pueden comprar contactando con un Administrador. Para más información usa /shophelp' +
 			'</center>'
@@ -65,7 +65,7 @@ exports.commands = {
 		var article = toId(params[0]);
 		switch (article) {
 			case 'customtc':
-				prize = 2500;
+				prize = 2000;
 				if (Shop.getUserMoney(user.name) < prize) return this.sendReply("No tienes suficiente dinero.");
 				var tcUser = Shop.getTrainerCard(user.name);
 				if (!tcUser) {

@@ -7,7 +7,7 @@ exports.commands = {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox('<center><font size = 3>Name Colors:</font><br />' +
 		                  '<p> Los "Name Colors" son una Serie de comandos que te cambian el color de tu Nick.<br /> Solo Utiliza el Comando /name[color] mensaje para cambiarte el color' +
-		                  '<p>Colores disponibles: Rainbow, Blue, White, Black, Orange, Green, Red, Pink, purple Y Yellow</p>' +
+		                  '<p>Colores disponibles: Rainbow, Led, kawaii, Blue, White, Black, Orange, Green, Red, Pink, purple Y Yellow</p>' +
 		                  '<font align="left" ><b>BY: Si encuentras algun problema,bug o tienes una Sugerencia, no dudes en avisar Con Un Admin'
 						);
 	},
@@ -202,7 +202,7 @@ exports.commands = {
         },
         
         namepurple: function (target, room, user){
-                var colors = ['#be68ff'];
+                var colors = ['#b047ff'];
                 if(!target) return this.sendReply('/rainbow message');
                         userColor = '',
                         currentDate = new Date(),
@@ -221,5 +221,50 @@ exports.commands = {
                                 room.add('|raw|<small>' + user.group + '</small><b>' + userColor + '</b>: ' + target);
                         }
         },
+        
+           led: function (target, room, user){
+                var colors = ['#32fba8', '#32fbe6', '#70febf'];
+                if(!target) return this.sendReply('/led message');
+                        userColor = '',
+                        currentDate = new Date(),
+                        randomNumber = '';
+                        for(var x = 0; x < user.name.length; x++){
+                                randomNumber = Math.floor(Math.random() * colors.length);
+                                if(user.name.substring(x, x + 1) !== undefined){
+                                        userColor += '<font color="' + colors[randomNumber] + '">' + user.name.substring(x, x + 1) + '</font>';
+                                } else {
+                                        userColor += '<font color="' + colors[randomNumber] + '">:</font>';
+                                }
+                        }
+                        if(target.indexOf('/me') > -1) {
+                                room.add('|raw|<small>' + user.group + '</small><b>' + userColor + '</b>: <i>' + Tools.escapeHTML(target.substring(3, target.length)) + '</i>');
+                        } else {
+                                room.add('|raw|<small>' + user.group + '</small><b>' + userColor + '</b>: ' + target);
+                        }
+        }, 
+        
+        kawaii: function (target, room, user){
+                var colors = ['#f68fe7', '#e088ff', '#edbdfe', '#f5b6fe'];
+                if(!target) return this.sendReply('/rainbow message');
+                        userColor = '',
+                        currentDate = new Date(),
+                        randomNumber = '';
+                        for(var x = 0; x < user.name.length; x++){
+                                randomNumber = Math.floor(Math.random() * colors.length);
+                                if(user.name.substring(x, x + 1) !== undefined){
+                                        userColor += '<font color="' + colors[randomNumber] + '">' + user.name.substring(x, x + 1) + '</font>';
+                                } else {
+                                        userColor += '<font color="' + colors[randomNumber] + '">:</font>';
+                                }
+                        }
+                        if(target.indexOf('/me') > -1) {
+                                room.add('|raw|<small>' + user.group + '</small><b>' + userColor + '</b>: <i>' + Tools.escapeHTML(target.substring(3, target.length)) + '</i>');
+                        } else {
+                                room.add('|raw|<small>' + user.group + '</small><b>' + userColor + '</b>: ' + target);
+                        }
+        },
+        
+         
+        
         
 }
