@@ -8,7 +8,7 @@ exports.commands = {
 		this.sendReplyBox('<center><font size = 3>Name Colors:</font><br />' +
 		                  '<p> Los "Name Colors" son una Serie de comandos que te cambian el color de tu Nick.<br /> Solo Utiliza el Comando /name[color] mensaje para cambiarte el color' +
 		                  '<p>Colores disponibles: Rainbow, Led, kawaii, Blue, White, Black, Orange, Green, Red, Pink, purple Y Yellow</p>' +
-		                  '<font align="left" ><b>BY: Si encuentras algun problema,bug o tienes una Sugerencia, no dudes en avisar Con Un Admin'
+		                  '<font align="left" ><b>BY: Si encuentras algun problema,bug o tienes una Sugerencia, no dudes en avisar Con Un Admin :D'
 						);
 	},
     
