@@ -16,7 +16,7 @@ var emotes = {
 	';)': 'http://factoryjoe.s3.amazonaws.com/emoticons/emoticon-0105-wink.gif',
 	':$': 'http://factoryjoe.s3.amazonaws.com/emoticons/emoticon-0111-blush.gif',
 	':prr:': 'http://r32.imgfast.net/users/3215/11/58/02/smiles/4268145079.gif',
-	'xD': 'http://www.animaatjes.nl/smileys/smileys-en-emoticons/xd/animaatjes-xd-09561.gif',
+	':xD:': 'http://www.animaatjes.nl/smileys/smileys-en-emoticons/xd/animaatjes-xd-09561.gif',
 	':hola:': 'http://k40.kn3.net/9788B4B8D.gif',
 	'O_O':'http://emoticoner.com/files/emoticons/pink-cat/surprised-pink-cat-emoticon.gif?1292538525',
 	':lengua:' :'http://emoticoner.com/files/emoticons/rice_ball/rice-ball-smiley-10.gif?1302020563',
